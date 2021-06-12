@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            nut.js Quickstart ⏱️
+            Quickstart 🚀
           </Link>
         </div>
       </div>
