@@ -25,6 +25,11 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
+          href: 'https://nut-tree.github.io/nut.js/',
+          label: 'API Doc',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/nut-tree/nut.js',
           label: 'GitHub',
           position: 'right',

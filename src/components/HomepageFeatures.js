@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
 title: 'Easy to Install',
-Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/easy_install.svg').default,
 description: (
   <>
     nut.js was developed with a focus on ease of installation. Everything is at your fingertips, just an <code>npm install</code> away!
@@ -14,7 +14,7 @@ description: (
   },
   {
 title: 'Easy to Use',
-Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+Svg: require('../../static/img/easy_use.svg').default,
 description: (
   <>
     An API which is loved by users for it's ease of use and expressiveness let's you automate in a breeze!
@@ -23,7 +23,7 @@ description: (
   },
   {
 title: 'Three platforms, single codebase',
-Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/multi_platform.svg').default,
 description: (
   <>
     nut.js is focused on cross-platform compatibility and equally supports macOS, Linux and Windows.
