@@ -7,15 +7,11 @@ sidebar_position: 1
 `nut.js` comes with a pre-built version of OpenCV for your respective target platform.
 In order to use these pre-compiled bindings, certain runtime conditions have to be met.
 
-## Prerequisites
-
-This section lists runtime requirements for `nut.js` on the respective target platform.
-
-#### Windows
+## Windows
 
 In order to install `nut.js` on Windows, please make sure to have the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installed.
 
-#### macOS
+## macOS
 
 On macOS, Xcode command line tools are required.
 You can install them by running
@@ -33,7 +29,7 @@ If not, you could try to manually add the application you're running the script 
 
 `Settings -> Security & Privacy -> Privacy -> Accessibility -> Add...`
 
-#### Linux
+## Linux
 
 Depending on your distribution, Linux setups may differ.
 
