@@ -1,50 +1,20 @@
----
-sidebar_position: 1
----
-
 # Installation
 
-`nut.js` comes with a pre-built version of OpenCV for your respective target platform.
-In order to use these pre-compiled bindings, certain runtime conditions have to be met.
+With our prerequisits met, let’s continue installing. 
+The following steps are meant to be carried out in a dedicated directory of your choice.
+I will simply refer to this directory as `working directory`.
 
-## Windows
+## npm project 
 
-In order to install `nut.js` on Windows, please make sure to have the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installed.
+Let’s first initialize a new npm project in our `working directory` by executing 
 
-## macOS
+`npm init`
 
-On macOS, Xcode command line tools are required.
-You can install them by running
-```bash
-xcode-select --install
-```
+Feel free to fill out the interactive dialogue, but it’s not a hard requirement to continue the initial setup.
 
-**Attention**:
+(You could even accept all defaults by running `npm init -y`)
 
-In case you're experiencing problems like your mouse not moving or your keyboard not typing,
-please make sure to give the process you're executing your tests with accessibility permissions.
-
-If an application wants to use accessibility features, a permission pop-up should be shown.
-If not, you could try to manually add the application you're running the script from.
-
-`Settings -> Security & Privacy -> Privacy -> Accessibility -> Add...`
-
-## Linux
-
-Depending on your distribution, Linux setups may differ.
-
-In general, `nut.js` requires
-
-- libXtst
-
-Installation on `*buntu` distributions:
-```bash
-sudo apt-get install build-essential libxtst-dev
-```
-
-Setups on other distributions might differ.
-
-## Install `nut.js`
+## Install nut.js
 
 Running 
 
@@ -58,7 +28,7 @@ or
 yarn add @nut-tree/nut-js
 ```
 
-will install `nut.js` and its required dependencies.
+in our newly created npm project will install nut.js and its required dependencies.
 
 ### Snapshot releases
 
