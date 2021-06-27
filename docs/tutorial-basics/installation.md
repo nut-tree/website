@@ -32,7 +32,7 @@ in our newly created npm project will install nut.js and its required dependenci
 
 ### Snapshot releases
 
-`nut.js` also provides snapshot releases which allows to test upcoming features.
+nut.js also provides snapshot releases which allows to test upcoming features.
 
 Running 
 
@@ -46,7 +46,7 @@ or
 yarn add @nut-tree/nut-js@next
 ```
 
-will install the most recent development release of `nut.js`.
+will install the most recent development release of nut.js.
 
 **Attention**: While snapshot releases are great to work with upcoming features before a new stable release, it is still a snapshot release.
 Please bear in mind that things might change and / or break on snapshot releases, so it is not recommended using them in production.
