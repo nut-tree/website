@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import NutJsLogo from '@site/static/img/logo.svg';
@@ -33,6 +34,9 @@ export default function Home() {
         <Layout
             title={`Hello from ${siteConfig.title}`}
             description="nut.js - node desktop automation">
+            <Head>
+            <script defer data-domain="nutjs.dev" src="https://plausible.io/js/plausible.js"></script>
+            </Head>
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
