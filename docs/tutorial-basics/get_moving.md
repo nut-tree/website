@@ -95,6 +95,6 @@ const { mouse, Point } = require("@nut-tree/nut-js");
 ## Summary
 
 - nut.js provides a `mouse` instance to control your cursor
-- Movement speed is configurable via the `config` object
+- Movement speed in pixels / second is configurable via the `config` object
 - It provides a high-level [MovementApi](https://nut-tree.github.io/nut.js/interfaces/movementapi.html) for easy relative mouse movement
 - For fast changes of cursor position, [setPosition](https://nut-tree.github.io/nut.js/classes/mouse.html#setposition) is the right tool
