@@ -81,7 +81,7 @@ const { mouse, straightTo, Point } = require("@nut-tree/nut-js");
 
 Sometimes we don't want to move along a path to reach a certain point.
 
-In such cases, we can rely on [setPosition](https://nut-tree.github.io/nut.js/classes/mouse.html#setposition) to immediately change our cursor position to the provided [Point](https://nut-tree.github.io/nut.js/classes/point.html)
+In such cases, we can rely on [setPosition](https://nut-tree.github.io/apidoc/classes/mouse.html#setposition) to immediately change our cursor position to the provided [Point](https://nut-tree.github.io/apidoc/classes/point.html)
 
 ```js
 const { mouse, Point } = require("@nut-tree/nut-js");
@@ -96,5 +96,5 @@ const { mouse, Point } = require("@nut-tree/nut-js");
 
 - nut.js provides a `mouse` instance to control your cursor
 - Movement speed in pixels / second is configurable via the `config` object
-- It provides a high-level [MovementApi](https://nut-tree.github.io/nut.js/interfaces/movementapi.html) for easy relative mouse movement
-- For fast changes of cursor position, [setPosition](https://nut-tree.github.io/nut.js/classes/mouse.html#setposition) is the right tool
+- It provides a high-level [MovementApi](https://nut-tree.github.io/apidoc/interfaces/movementapi.html) for easy relative mouse movement
+- For fast changes of cursor position, [setPosition](https://nut-tree.github.io/apidoc/classes/mouse.html#setposition) is the right tool
