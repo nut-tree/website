@@ -6,11 +6,6 @@ sidebar_position: 1
 
 nut.js provides custom matchers for Jest, which allows you to write UI tests using well known syntax.
 
-- [Setup](#setup)
-- [toBeAt](#tobeat)
-- [toBeIn](#tobein)
-- [toShow](#toshow)
-
 ## Setup
 
 In order to use our custom matchers we need to extend Jest's `expect`
