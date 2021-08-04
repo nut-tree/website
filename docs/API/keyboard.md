@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# nut.js Keyboard Control
+# Keyboard Control
 
 nut.js allows to simulate keyboard input by typing text or pressing / releasing single keys or key combinations.
 

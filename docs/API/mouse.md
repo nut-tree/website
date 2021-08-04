@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# nut.js Mouse Control
+# Mouse Control
 
 nut.js allows to simulate mouse input by moving the cursor, clicking mouse buttons or performing dragging gestures.
 

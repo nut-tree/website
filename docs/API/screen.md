@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# nut.js Screen Control
+# Screen Control
 
 nut.js allows to search and wait for images on your screen to either verify certain conditons or use it for further processing.
 

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# nut.js Jest integration
+# Jest integration
 
 nut.js provides custom matchers for Jest, which allows you to write UI tests using well known syntax.
 
@@ -121,7 +121,7 @@ const {jestMatchers, screen} = require("@nut-tree/nut-js");
 expect.extend(jestMatchers);
 
 describe("Basic test with custom Jest matchers", () => {
-    it("should verify that the api-screen shows a certain image", async () => {
+    it("should verify that the API-screen shows a certain image", async () => {
         // GIVEN
         screen.config.resourceDirectory = "../../e2e/assets";
 
@@ -141,7 +141,7 @@ const {jestMatchers, screen} = require("@nut-tree/nut-js");
 expect.extend(jestMatchers);
 
 describe("Basic test with custom Jest matchers", () => {
-    it("should verify that the api-screen shows a certain image", async () => {
+    it("should verify that the API-screen shows a certain image", async () => {
         // GIVEN
         screen.config.resourceDirectory = "../../e2e/assets";
 
