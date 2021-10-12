@@ -1,6 +1,6 @@
 ---
 slug: incremental-steps-devlog
-title: Incremental steps - #devlog
+title: Incremental steps - devlog
 author: Simon Hofmann
 author\_title: Maintainer @ nut.js
 author\_url: https://github.com/s1hofmann
@@ -8,7 +8,7 @@ author\_image\_url: https://avatars.githubusercontent.com/u/7813765?s=60&v=4
 tags: [building, status]
 ---
 
-# Incremental steps - #devlog
+# Incremental steps - devlog
 
 First steps have been made!
 My endeavour to get rid of nan-type bindings in nut.js, `opencv4nodejs`, to be precise, is making progress.
