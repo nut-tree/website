@@ -117,7 +117,7 @@ If you haven't used any image matching functionality in your code, you won't enc
 
 By extracting the image matching code into a separate plug-in the nut.js base package itself:
 
-- Lost around 70 MB of required disk space
+- Lost around 70 MB of required disk space
 - Is no longer dependent on a certain node version, so your able to use it with e.g. node 17 right away
 
 ## Awesome, can I start using it?
