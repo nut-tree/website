@@ -8,8 +8,6 @@ author\_image\_2021-10-12-incremental-steps-devlog.mdurl: https://avatars.github
 tags: [building, status]
 ---
 
-# Going On - #devlog
-
 Those of you who are keeping an eye on the nut.js repository might have noticed something — quite a big change is on the horizon!
 
 As I already mentioned [in my previous post](https://nutjs.dev/blog/incremental-steps-devlog), I'm trying to reduce the amount of work required to keep nut.js compatible with upcoming node and Electron version. This became even more pressing since the Electron team switched to an eight weeks release cycle, so nut.js would require a new release every 8 weeks as well to keep up.
