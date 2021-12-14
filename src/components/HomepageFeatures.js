@@ -18,7 +18,7 @@ const FeatureList = [
         Svg: require('../../static/img/easy_use.svg').default,
         description: (
             <>
-                An API which is loved by users for it's ease of use and expressiveness let's you automate in a breeze!
+                An API which is loved by users for its ease of use and expressiveness let's you automate in a breeze!
             </>
         ),
     },
