@@ -16,7 +16,7 @@ const termLines = [
         'cmd': true
     },
     {
-        'text': '\tawait keyboard.type("nut.js - Best in class node desktop automation!");',
+        'text': '\tawait keyboard.type("nut.js - Best in class node desktop automation");',
         'cmd': true
     },
     {
@@ -74,7 +74,7 @@ export default function DemoTerminal() {
         <Terminal
             lines={termLines}
             interval={80}
-            height={430}
+            height={450}
         />
     )
 }
