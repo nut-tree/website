@@ -74,7 +74,7 @@ export default function DemoTerminal() {
         <Terminal
             lines={termLines}
             interval={80}
-            height={400}
+            height={430}
         />
     )
 }
