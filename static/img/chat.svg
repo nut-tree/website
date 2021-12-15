@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 551 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" stroke="#14208B" stroke-width="10">
+            <path d="M491,5 C506.187831,5 519.937831,11.1560847 529.890873,21.109127 C539.843915,31.0621694 546,44.8121694 546,60 L546,60 L546,204 C546,219.187831 539.843915,232.937831 529.890873,242.890873 C519.937831,252.843915 506.187831,259 491,259 L491,259 L374.720099,259 L374.720099,412.10603 L166.898308,259 L60,259 C44.8121694,259 31.0621694,252.843915 21.109127,242.890873 C11.1560847,232.937831 5,219.187831 5,204 L5,204 L5,60 C5,44.8121694 11.1560847,31.0621694 21.109127,21.109127 C31.0621694,11.1560847 44.8121694,5 60,5 L60,5 Z" id="Combined-Shape" fill="#FFF0AA"></path>
+            <g id="Group" transform="translate(127.000000, 97.000000)" fill="#D8D8D8">
+                <circle id="Oval" cx="35.5" cy="35.5" r="30.5"></circle>
+                <circle id="Oval-Copy" cx="148.5" cy="35.5" r="30.5"></circle>
+                <circle id="Oval-Copy-2" cx="261.5" cy="35.5" r="30.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

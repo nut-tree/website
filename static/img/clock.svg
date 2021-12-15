@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="383px" height="427px" viewBox="0 0 383 427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Uhr</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Uhr">
+            <circle id="Korpus" stroke="#5A78B7" stroke-width="13" fill="#E0AFFF" cx="191.5" cy="235.5" r="185"></circle>
+            <circle id="Innen" fill="#5A78B7" cx="192" cy="236" r="36"></circle>
+            <path d="M191.499999,65.5007176 C238.384005,65.6353027 280.816533,84.6931207 311.561706,115.438294 C342.416137,146.292725 361.5,188.917725 361.5,236 C361.5,283.082275 342.416137,325.707275 311.561706,356.561706 C280.707275,387.416137 238.082275,406.5 191,406.5 C149.938264,406.5 112.266714,391.984766 82.8366985,367.805339 L82.8366985,367.805339 L141.367661,273.649708 C152.617539,288.160276 170.218097,297.5 190,297.5 C206.982756,297.5 222.357756,290.616378 233.487067,279.487067 C244.616378,268.357756 251.5,252.982756 251.5,236 C251.5,219.199677 244.763469,203.972758 233.844256,192.873062 C223.013738,181.863527 208.068192,174.914506 191.499767,174.517932 L191.499767,174.517932 Z" id="Zeit" stroke="#979797" fill="#5A78B7"></path>
+            <g id="Rad" transform="translate(150.000000, 0.000000)">
+                <rect id="Rectangle" fill="#E0AFFF" x="14" y="3" width="3" height="25"></rect>
+                <rect id="Rectangle-Copy-3" fill="#E0AFFF" x="45" y="2" width="3" height="28"></rect>
+                <rect id="Rectangle-Copy" fill="#E0AFFF" x="24" y="2" width="3" height="28"></rect>
+                <rect id="Rectangle-Copy-4" fill="#E0AFFF" x="56" y="2" width="3" height="28"></rect>
+                <rect id="Rectangle-Copy-2" fill="#E0AFFF" x="34" y="2" width="3" height="28"></rect>
+                <rect id="Rectangle-Copy-5" fill="#E0AFFF" x="66.1607143" y="3" width="2.67857143" height="25"></rect>
+                <rect id="Rectangle" fill="#5A78B7" x="0" y="0" width="83" height="32" rx="16"></rect>
+                <rect id="Rectangle" stroke="#5A78B7" stroke-width="3" fill="#E0AFFF" x="18.5" y="30.5" width="47" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
