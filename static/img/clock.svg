@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="383px" height="427px" viewBox="0 0 383 427" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Uhr</title>
+<svg width="249px" height="187px" viewBox="0 0 249 187" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>clock</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Uhr">
-            <circle id="Korpus" stroke="#5A78B7" stroke-width="13" fill="#E0AFFF" cx="191.5" cy="235.5" r="185"></circle>
-            <circle id="Innen" fill="#5A78B7" cx="192" cy="236" r="36"></circle>
-            <path d="M191.499999,65.5007176 C238.384005,65.6353027 280.816533,84.6931207 311.561706,115.438294 C342.416137,146.292725 361.5,188.917725 361.5,236 C361.5,283.082275 342.416137,325.707275 311.561706,356.561706 C280.707275,387.416137 238.082275,406.5 191,406.5 C149.938264,406.5 112.266714,391.984766 82.8366985,367.805339 L82.8366985,367.805339 L141.367661,273.649708 C152.617539,288.160276 170.218097,297.5 190,297.5 C206.982756,297.5 222.357756,290.616378 233.487067,279.487067 C244.616378,268.357756 251.5,252.982756 251.5,236 C251.5,219.199677 244.763469,203.972758 233.844256,192.873062 C223.013738,181.863527 208.068192,174.914506 191.499767,174.517932 L191.499767,174.517932 Z" id="Zeit" stroke="#979797" fill="#5A78B7"></path>
-            <g id="Rad" transform="translate(150.000000, 0.000000)">
-                <rect id="Rectangle" fill="#E0AFFF" x="14" y="3" width="3" height="25"></rect>
-                <rect id="Rectangle-Copy-3" fill="#E0AFFF" x="45" y="2" width="3" height="28"></rect>
-                <rect id="Rectangle-Copy" fill="#E0AFFF" x="24" y="2" width="3" height="28"></rect>
-                <rect id="Rectangle-Copy-4" fill="#E0AFFF" x="56" y="2" width="3" height="28"></rect>
-                <rect id="Rectangle-Copy-2" fill="#E0AFFF" x="34" y="2" width="3" height="28"></rect>
-                <rect id="Rectangle-Copy-5" fill="#E0AFFF" x="66.1607143" y="3" width="2.67857143" height="25"></rect>
-                <rect id="Rectangle" fill="#5A78B7" x="0" y="0" width="83" height="32" rx="16"></rect>
-                <rect id="Rectangle" stroke="#5A78B7" stroke-width="3" fill="#E0AFFF" x="18.5" y="30.5" width="47" height="16"></rect>
+        <g id="clock" transform="translate(43.985568, 8.000000)">
+            <path d="M130.102484,40.5926057 C110.318263,25.0105246 17.6885703,51.4470931 26.314405,55.2220202 C34.9402397,58.9969473 162.452617,51.4510499 160.987472,54.1088137 C159.522326,56.7665775 37.5697001,60.819822 20.5970613,65.5932431 C3.62442242,70.3666641 -15.703731,91.908709 20.5970613,93.5925115 C56.8978535,95.276314 112.416677,71.2753884 123.210024,70.3529178 C134.00337,69.4304471 171.692084,68.4103951 136.085033,83.7221469 C100.477983,99.0338987 39.459201,98.2004431 35.4431726,108.094439 C31.4271443,117.988434 89.2039982,148.357443 118.259347,127.637988" id="Background" stroke="#E0AFFF" stroke-width="87" stroke-linecap="round"></path>
+            <g id="Uhr" transform="translate(8.014432, 0.000000)">
+                <circle id="Korpus" stroke="#5A78B7" stroke-width="13" cx="72.5" cy="88.5" r="66"></circle>
+                <circle id="Innen" fill="#5A78B7" cx="73.5" cy="89.5" r="13.5"></circle>
+                <path d="M73.1439482,32.502197 C88.3696613,32.6360482 102.141184,38.8775215 112.139692,48.901569 C122.247994,59.0356912 128.5,73.0358808 128.5,88.5 C128.5,103.964119 122.247994,117.964309 112.139692,128.098431 C102.03185,138.232091 88.0680281,144.5 72.643952,144.5 C59.3988939,144.5 47.2305875,139.878045 37.6562231,132.155058 L37.6562231,132.155058 L56.4618222,101.694373 C60.2411965,106.252918 65.9398136,109.154971 72.3143844,109.154971 C78.0040625,109.154971 83.1551571,106.84298 86.8837942,103.104819 C90.6119702,99.3671196 92.9180039,94.2035665 92.9180039,88.5 C92.9180039,82.8576632 90.661211,77.743811 87.0033719,74.0160506 C83.4462018,70.3908836 78.5640563,68.0765969 73.1436815,67.86146 L73.1436815,67.86146 Z" id="Zeit" stroke="#979797" fill="#5A78B7"></path>
+                <g id="Rad" transform="translate(57.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#E0AFFF" x="5.22891566" y="1.125" width="1.12048193" height="9.375"></rect>
+                    <rect id="Rectangle-Copy-3" fill="#E0AFFF" x="16.8072289" y="0.75" width="1.12048193" height="10.5"></rect>
+                    <rect id="Rectangle-Copy" fill="#E0AFFF" x="8.96385542" y="0.75" width="1.12048193" height="10.5"></rect>
+                    <rect id="Rectangle-Copy-4" fill="#E0AFFF" x="20.9156627" y="0.75" width="1.12048193" height="10.5"></rect>
+                    <rect id="Rectangle-Copy-2" fill="#E0AFFF" x="12.6987952" y="0.75" width="1.12048193" height="10.5"></rect>
+                    <rect id="Rectangle-Copy-5" fill="#E0AFFF" x="24.7106282" y="1.125" width="1.00043029" height="9.375"></rect>
+                    <rect id="Rectangle" fill="#5A78B7" x="0" y="0" width="31" height="12" rx="6"></rect>
+                    <rect id="Rectangle" stroke="#5A78B7" stroke-width="3" x="7.84939759" y="12.375" width="15.6746988" height="4.125"></rect>
+                </g>
             </g>
         </g>
     </g>
