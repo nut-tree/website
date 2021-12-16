@@ -63,4 +63,4 @@ Everything mentioned on [find](find.md) applies to `waitFor` as well.
 ## Summary
 
 - `waitFor` will repeatedly search your **main** screen for the template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region.html) it located the template image in.
-- If it can't locate the image, it'll retry the search in intervals of 500 milliseconds until it hits the configured timeout in milliseconds.
+- If it can't locate the image, it'll retry the search in configurable intervals until it hits the configured timeout in milliseconds.
