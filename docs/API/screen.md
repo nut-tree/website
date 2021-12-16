@@ -82,10 +82,6 @@ for (const match of matches) {
 }
 ```
 
-## [`height`](https://nut-tree.github.io/apidoc/classes/screen.html#height)
-
-`height` returns the main screen's height in pixels.
-
 ## [`highlight`](https://nut-tree.github.io/apidoc/classes/screen.html#highlight)
 
 When working with template images to e.g. move the mouse to certain positions it can be quite cumbersome to follow along
@@ -119,6 +115,20 @@ Once the configured timeout is reached with no match, `waitFor` will fail.
 await mouse.move(straightTo(centerOf(screen.waitFor(imageResource("image.png"), 3000, 500))));
 ```
 
+## [`colorAt`](https://nut-tree.github.io/apidoc/classes/screen.html#colorat)
+
+`colorAt` will return RGBA color information at a specified pixel location.
+
+For example, a black pixel would be represented as
+
+```
+RGBA { R: 0, G: 0, B: 0, A: 255 }
+```
+
 ## [`width`](https://nut-tree.github.io/apidoc/classes/screen.html#width)
 
 `width` returns the main screen's width in pixels.
+
+## [`height`](https://nut-tree.github.io/apidoc/classes/screen.html#height)
+
+`height` returns the main screen's height in pixels.
