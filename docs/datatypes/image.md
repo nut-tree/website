@@ -47,6 +47,13 @@ nut.js provides helpers for image loading.
 `loadImage` receives a full path to an image, loads it and returns an [`Image`](https://nut-tree.github.io/apidoc/classes/image.html) in `BGR` color mode, representing this particular file.
 The image id will automatically be set to the path it was loaded from.
 
+### imageResources
+
+Often times, images are loaded to be uses as input to `Screen#find` or similar.
+For such use cases, nut.js provides the `imageResources` helper function to load images relative to a configured resource directory.
+
+See [Loading Images from Resource Directory](../tutorial-screen/template-images.md#loading-images-from-resource-directory) and [the cross platform trick](../tutorial-screen/find.md#the-cross-platform-trick) for further information.
+
 ## Image saving
 
 Similar to image loading, nut.js provides helpers for image saving as well.

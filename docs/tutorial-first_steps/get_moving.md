@@ -6,11 +6,9 @@ sidebar_position: 3
 
 Now that we're all set up it's time to get things moving!
 
-In particular, I'm talking about your cursor!
-
 In our `working directory`, let's create a new file, `index.js`.
 
-Open it in your favourite editor and add the following line to get started:
+Open it in your favourite editor and add the following lines to get started:
 
 ```js
 const { mouse } = require("@nut-tree/nut-js");
@@ -37,7 +35,7 @@ const { mouse, left, right, up, down } = require("@nut-tree/nut-js");
 })();
 ```
 
-nut.js provides a declarative API, so instead of explicitly stating where we want our cursor to be, we can make use [MovementApi](https://nut-tree.github.io/nut.js/interfaces/movementapi.html) functions to move our cursor relative to our current position.
+nut.js provides a declarative API, so instead of explicitly stating where we want our cursor to be, we can use the [MovementApi](https://nut-tree.github.io/nut.js/interfaces/movementapi.html) functions to move our cursor relative to our current position.
 
 When executed via `node index.js` you'll see that your cursor moves along a square and ends up at its initial position.
 
@@ -56,7 +54,7 @@ const { mouse, straightTo, Point } = require("@nut-tree/nut-js");
 })();
 ```
 
-`straightTo` is another `MovementApi` function which takes a target [Point](https://nut-tree.github.io/nut.js/classes/point.html) and computes a straight line towards it, starting at our current cursor positon.
+`straightTo` is another `MovementApi` function which takes a target [Point](https://nut-tree.github.io/nut.js/classes/point.html) and computes a straight line towards it, starting at our current cursor position.
 
 ## Speeding up / Slowing down
 

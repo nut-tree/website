@@ -1,20 +1,11 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # find
 
-In order to search for an image on your screen, you need to provide a template image.
-Template images are simply specified via filename, relative to a configurable [resource directory](https://nut-tree.github.io/apidoc/classes/screen.html#config.resourcedirectory).
-
-## Resource Directory
-
-Template images are specified via filename.
-However, when loading a template image, these filenames are relative to `screen.config.resourceDirectory`.
-
-`screen.config.resourceDirectory = /path/to/my/template/images`
-
-If not configured explicitly, `screen.config.resourceDirectory` is set to the current working directory.
+Template images are [`Images`](../datatypes/image.md) either directly loaded using their full path, or relative to a configurable [resource directory](https://nut-tree.github.io/apidoc/classes/screen.html#config.resourcedirectory).
+See [`working with template images`](template-images.md#working-with-template-images) for further info.
 
 ## finding images
 
@@ -26,7 +17,7 @@ const { screen } = require("@nut-tree/nut-js");
 (async () => {
     screen.config.resourceDirectory = "/resouce/path";
     try {
-        const region = await screen.find("mouse.png");
+        const region = await screen.find(imageResource("mouse.png"));
         console.log(region);
     } catch (e) {
         console.error(e);
@@ -73,10 +64,6 @@ In case we screwed up, nut.js will let us know by rejecting.
 #### No match
 
 `Searching for mouse.png failed. Reason: 'Error: No match with required confidence 0.99. Best match: 0 at (0, 0, 477, 328)'`
-
-#### Wrong resource directory
-
-`Searching for mouse.png failed. Reason: 'Error: Failed to load /foo/bar/mouse.png. Reason: 'Failed to load image from '/foo/bar/mouse.png''.'`
 
 ## Summary
 

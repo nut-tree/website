@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Installation
 
-With our prerequisits met, let’s continue installing. 
+With our prerequisites met, let’s continue installing. 
 The following steps are meant to be carried out in a dedicated directory of your choice.
-I will simply refer to this directory as `working directory`.
+We will simply refer to this directory as `working directory`.
 
 ## npm project 
 
@@ -36,7 +36,7 @@ in our newly created npm project will install nut.js and its required dependenci
 
 ### Snapshot releases
 
-nut.js also provides snapshot releases which allows to test upcoming features.
+nut.js also provides snapshot releases which allows testing upcoming features.
 
 Running 
 
