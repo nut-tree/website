@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Cancelling waitFor
@@ -38,4 +38,4 @@ Action aborted by signal
 
 ## Summary
 
-- `waitFor` cancelable using an [AbortController](https://www.npmjs.com/package/node-abort-controller)
+- `waitFor` is cancelable using an [AbortController](https://www.npmjs.com/package/node-abort-controller)

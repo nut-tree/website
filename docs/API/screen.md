@@ -4,20 +4,23 @@ sidebar_position: 3
 
 # Screen Control
 
-nut.js allows to search and wait for images on your screen to either verify certain conditons or use it for further processing.
+nut.js allows searching and waiting for images on your screen to either verify certain conditions, or use it for further
+processing.
 
 ## Configuration
 
-The nut.js [screen](https://nut-tree.github.io/apidoc/classes/screen.html) comes with a [config](https://nut-tree.github.io/apidoc/classes/screen.html#config) object which allows to configure its behaviour.
+The nut.js [screen](https://nut-tree.github.io/apidoc/classes/screen.html) comes with
+a [config](https://nut-tree.github.io/apidoc/classes/screen.html#config) object which allows to configure its behaviour.
 
 ### confidence
 
-`screen.config.confidence` specifies the required matching percentage required to mark a possible candidate for a given template image a match.
+`screen.config.confidence` specifies the required matching percentage required to mark a possible candidate for a given
+template image a match.
 
 ### autoHighlight
 
-`screen.config.autoHighlight` is a boolean toggle which enables automated highlighting of image search results.
-This will highlight the matching [Region](https://nut-tree.github.io/apidoc/classes/region.html) by showing an opaque window.
+`screen.config.autoHighlight` is a boolean toggle which enables automated highlighting of image search results. This
+will highlight the matching [Region](https://nut-tree.github.io/apidoc/classes/region.html) by showing an opaque window.
 
 ### highlightDurationMs
 
@@ -25,39 +28,67 @@ This will highlight the matching [Region](https://nut-tree.github.io/apidoc/clas
 
 ### highlightOpacity
 
-`screen.config.highlightOpacity` configures the opacity of highlight windows. Ranges from 0 (fully transparent) to 1 (fully opaque).
+`screen.config.highlightOpacity` configures the opacity of highlight windows. Ranges from 0 (fully transparent) to 1 (
+fully opaque).
 
 ### resourceDirectory
 
-`screen.config.resourceDirectory` configures the location to load assets from.
-This allows configuring resource locations depending on e.g. the current operating system.
+`screen.config.resourceDirectory` configures the location to load assets from
+via [`imageResource`](../tutorial-screen/template-images.md#loading-images-from-resource-directory). This allows
+configuring resource locations depending on e.g. the current operating system.
 
-One could provide multiple folders containing platform specific template images and chose the correct resource directory at runtime.
-Following this scheme loading of platform specific images would be possible without changes to the source.
+One could provide multiple folders containing platform specific template images and chose the correct resource directory
+at runtime. Following this scheme loading of platform specific images would be possible without changes to the source.
 
 ## [`capture`](https://nut-tree.github.io/apidoc/classes/screen.html#capture)
 
 `capture` allows you to capture a screenshot and store it to your filesystem.
 
+## [`captureRegion`](https://nut-tree.github.io/apidoc/classes/screen.html#captureRegion)
+
+`captureRegion` allows you to capture a screenshot of a desktop region and store it to your filesystem.
+
+## [`grab`](https://nut-tree.github.io/apidoc/classes/screen.html#grab)
+
+`grab` allows you to retrieve an [`Image`](../datatypes/image.md) containing the current screen content.
+
+## [`grabRegion`](https://nut-tree.github.io/apidoc/classes/screen.html#captureRegion)
+
+`grabRegion` allows you to an [`Image`](../datatypes/image.md) containing the current content of a desktop region.
+
 ## [`find`](https://nut-tree.github.io/apidoc/classes/screen.html#find)
 
-`find` takes a filename relative to the configured [resourceDirectory](#resourcedirectory) and tries to find a match on the main screen.
-It is possible to override the the [configured matching confidence](#confidence) and search region providing [LocationParameters](https://nut-tree.github.io/apidoc/classes/locationparameters.html).
-In case of a match, the corresponding [Region](https://nut-tree.github.io/apidoc/classes/region.html) on screen is returned.
+`find` takes a template [`Image`](../datatypes/image.md) and tries to find a match on the main screen. It is possible to
+override the [configured matching confidence](#confidence) and search region
+providing [OptionalSearchParameters](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters.html). In case of a match,
+the corresponding [Region](https://nut-tree.github.io/apidoc/classes/region.html) on screen is returned.
 
 ```js
-await mouse.move(straightTo(centerOf(screen.find("image.png"))));
+await mouse.move(straightTo(centerOf(screen.find(imageResource("image.png")))));
 ```
 
-## [`height`](https://nut-tree.github.io/apidoc/classes/screen.html#height)
+## [`findAll`](https://nut-tree.github.io/apidoc/classes/screen.html#findall)
 
-`height` returns the main screen's height in pixels.
+In contrast to [`find`](screen.md) returning only the most probable match, `findAll` takes a
+template [`Image`](../datatypes/image.md) and returns a list of all matched occurrences on the main screen. It is
+possible to override the [configured matching confidence](#confidence) and search region
+providing [OptionalSearchParameters](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters.html). In case of a match,
+the corresponding [Region](https://nut-tree.github.io/apidoc/classes/region.html) on screen is returned.
+
+```js
+const matches = await screen.findAll(imageResource("image.png"));
+for (const match of matches) {
+    await mouse.move(straightTo(centerOf(match)));
+}
+```
 
 ## [`highlight`](https://nut-tree.github.io/apidoc/classes/screen.html#highlight)
 
-When working with template images to e.g. move the mouse to certain positions it can be quite cumbersome to follow along without visual clues.
+When working with template images to e.g. move the mouse to certain positions it can be quite cumbersome to follow along
+without visual clues.
 
-`highlight` allows you to display an opaque window overlay which makes it easier to visually follow detection / movement.
+`highlight` allows you to display an opaque window overlay which makes it easier to visually follow detection /
+movement.
 
 ```js
 await screen.highlight(screen.find("image.png"));
@@ -65,21 +96,39 @@ await screen.highlight(screen.find("image.png"));
 
 ## [`on`](https://nut-tree.github.io/apidoc/classes/screen.html#on)
 
-`on` allows you to register [callbacks](https://nut-tree.github.io/apidoc/globals.html#findhookcallback) which will be executed once [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind) returns a match for a given template image.
+`on` allows you to register [callbacks](https://nut-tree.github.io/apidoc/globals.html#findhookcallback) which will be
+executed once [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind) returns a match for a given template image.
 
 This way it's possible to repeatedly execute actions whenever a certain image is detected on screen.
 
 ## [`waitFor`](https://nut-tree.github.io/apidoc/classes/screen.html#waitfor)
 
-Similar to [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind), `waitFor` will search for a template image on a system's main screen.
+Similar to [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind), `waitFor` will search for a template image on a
+systems main screen.
 
-While [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind) will fail immediately if no match is found, `waitFor` allows to configure a timeout in milliseconds during which the screen will repeatedly be scanned for the template image.
+While [find](#findhttpsnut-treegithubionutjsclassesscreenhtmlfind) will fail immediately if no match is found, `waitFor`
+allows to configure a timeout in milliseconds during which the screen will repeatedly be scanned for the template image.
+The interval in milliseconds, in which the image search is carried out, is configurable as well. Its default value is set to 500ms. 
 Once the configured timeout is reached with no match, `waitFor` will fail.
 
 ```js
-await mouse.move(straightTo(centerOf(screen.waitFor("image.png", 3000))));
+await mouse.move(straightTo(centerOf(screen.waitFor(imageResource("image.png"), 3000, 500))));
+```
+
+## [`colorAt`](https://nut-tree.github.io/apidoc/classes/screen.html#colorat)
+
+`colorAt` will return RGBA color information at a specified pixel location.
+
+For example, a black pixel would be represented as
+
+```
+RGBA { R: 0, G: 0, B: 0, A: 255 }
 ```
 
 ## [`width`](https://nut-tree.github.io/apidoc/classes/screen.html#width)
 
 `width` returns the main screen's width in pixels.
+
+## [`height`](https://nut-tree.github.io/apidoc/classes/screen.html#height)
+
+`height` returns the main screen's height in pixels.

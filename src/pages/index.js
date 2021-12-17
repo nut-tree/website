@@ -1,29 +1,73 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
 
+import HomepageHeader from "../components/HomepageHeader";
 import HomepageFeatures from '../components/HomepageFeatures';
 import Terminal from "../components/Terminal";
+import HeroSection from "../components/HeroSection";
 
-function HomepageHeader() {
-    return (
-        <header className={clsx('hero hero--dark', styles.heroBanner)}>
-            <div className="container">
-                <div className={styles.buttons}>
-                    <Link
-                        className="button button--secondary button--lg"
-                        to="/docs/intro">
-                        Quickstart 🚀
-                    </Link>
-                </div>
-            </div>
-        </header>
-    );
-}
+const features = [
+    {
+        title: 'Easy to Install',
+        Svg: require('../../static/img/easy_install.svg').default,
+        description: (
+            <>
+                nut.js was developed with a focus on ease of installation. Everything is at your fingertips, just
+                an <code>npm install</code> away!
+            </>
+        ),
+    },
+    {
+        title: 'Easy to Use',
+        Svg: require('../../static/img/easy_use.svg').default,
+        description: (
+            <>
+                An API which is loved by users for its ease of use and expressiveness let's you automate in a breeze!
+            </>
+        ),
+    },
+    {
+        title: 'Three platforms, single codebase',
+        Svg: require('../../static/img/multi_platform.svg').default,
+        description: (
+            <>
+                nut.js is focused on cross-platform compatibility and equally supports macOS, Linux and Windows.
+            </>
+        ),
+    },
+];
+
+const benefits = [
+    {
+        title: 'Plugins',
+        Svg: require('../../static/img/plugin.svg').default,
+        description: (
+            <>
+                A flexible plugin system allows you to provide your own custom implementations to fit your needs!
+            </>
+        ),
+    },
+    {
+        title: 'Future proof',
+        Svg: require('../../static/img/clock.svg').default,
+        description: (
+            <>
+                nut.js is compatible with current and future releases of Node.js or Electron
+            </>
+        ),
+    },
+    {
+        title: 'Community',
+        Svg: require('../../static/img/chat.svg').default,
+        description: (
+            <>
+                You're invited to join an active community that encourages participation and knowledge sharing!
+            </>
+        ),
+    },
+];
 
 export default function Home() {
     const {siteConfig} = useDocusaurusContext();
@@ -38,7 +82,10 @@ export default function Home() {
             <Terminal/>
             <main>
                 <HomepageHeader/>
-                <HomepageFeatures/>
+                <HomepageFeatures features={features}/>
+                <HeroSection
+                    heroText={"Desktop automation felt like a really daunting task, but nut.js actually makes it easy!"}/>
+                <HomepageFeatures features={benefits}/>
             </main>
         </Layout>
     );

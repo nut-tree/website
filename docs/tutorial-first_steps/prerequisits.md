@@ -47,4 +47,4 @@ Setups on other distributions might differ.
 ## node
 
 nut.js is built and tested against various versions of node.
-However, I'd recommend running the latest available LTS version of node (`lts/fermium` at the time of writing) and using a version manager like [nvm](https://github.com/nvm-sh/nvm)
+However, for best compatibility, it's recommended to run the latest available LTS version of node (`lts/gallium` at the time of writing) and using a version manager like [nvm](https://github.com/nvm-sh/nvm)

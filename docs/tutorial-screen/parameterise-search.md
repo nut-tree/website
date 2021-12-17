@@ -1,10 +1,10 @@
 ---
-sidebar_position: 4
+sidebar_position: 8
 ---
 
 # Parameterize Search
 
-Both [find](find.md) and [waitFor](waitfor.md) accept [OptionalSearchParameters](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters.html) to fine-tune the search.
+[find](find.md), [findAll](findall.md) and [waitFor](waitfor.md) accept [OptionalSearchParameters](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters.html) to fine-tune the search.
 
 This allows to e.g. limit the search space to a certain portion of your screen:
 
