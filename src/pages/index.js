@@ -84,8 +84,8 @@ export default function Home() {
                 <HomepageHeader/>
                 <HomepageFeatures features={features}/>
                 <HeroSection
-                    heroText={"Desktop automation felt like a really daunting task, but nut.js actually makes it easy!"}/>
-                <HomepageFeatures features={benefits}/>
+                    heroText={"I just started sponsoring nut ❤️  It saves me so much time! Also love provided functionality for testing, you really thought of everything!"}/>
+                        <HomepageFeatures features={benefits}/>
             </main>
         </Layout>
     );

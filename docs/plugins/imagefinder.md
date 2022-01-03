@@ -14,6 +14,19 @@ npm i @nut-tree/template-matcher
 
 Initial implementation for on-screen image search.
 
+### Usage
+
+Simply require / import the package to wire up the provider:
+
+```js
+const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
+
+(async () => {
+  const img = await screen.find(imageResource("..."));
+})();
+```
+
 ## @nut-tree/nl-matcher
 
 ```shell
@@ -38,3 +51,16 @@ See the table below for a comparison of both modules:
 | findAll                                                       |                   ❌                   |                   ✔️                   |
 | Supports node 12 / 13 / 14 / 15 / 16 / 17 / next              | ✔️ / ❌ / ✔️ / ✔️ / ✔️ / ❌ / ❌             | ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️             |
 | Supports node 8 / 9 / 10 / 11 / 12 / 13 / 14 / 15 / 16 / next | ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ❌ / ❌ / ❌ / ❌ | ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ |
+
+### Usage
+
+Simply require / import the package to wire up the provider:
+
+```js
+const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/nl-matcher");
+
+(async () => {
+  const img = await screen.findAll(imageResource("..."));
+})();
+```
