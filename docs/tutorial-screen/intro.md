@@ -23,12 +23,12 @@ npm i @nut-tree/template-matcher
 To use this provider package, simply require it in your code, e.g. `index.js`:
 
 ```js
-const { screen } = require("@nut-tree/nut-js");
+const { screen, imageResource } = require("@nut-tree/nut-js");
 require("@nut-tree/template-matcher"); // THIS IS NEW
 
 (async () => {
   try {
-    await screen.find("img.png");
+    await screen.find(imageResource("img.png"));
   } catch (e) {
     console.error(e);
   }
