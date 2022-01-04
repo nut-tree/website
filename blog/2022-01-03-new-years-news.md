@@ -71,6 +71,8 @@ An astonishing amount of people told me that they were using nut.js in commercia
 
 That's a **BIG** issue and really had an impact on me that ultimately contributed to this decision.
 
+I know that I'm really fortunate to already have some sponsors, and I'm really thankful for their support, but overall it's also a thing about valuing someone else's work.
+
 Now before anyone gets mad about the sponsoring tiers I chose:
 
 - I'm confident that nut.js is worth it
@@ -78,6 +80,7 @@ Now before anyone gets mad about the sponsoring tiers I chose:
 - It easily gives you an advantage over possible competitors
 
 From time to time I will also gift access to private packages to people that are actively participating in our community, because this should be valued as well!
+Existing sponsors will of course also get access!
 
 Alright, quite a lot to digest.
 Feel free to let it sink and if you feel like it, get in touch with me on Discord.
