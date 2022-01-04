@@ -28,7 +28,7 @@ With this module moved out of the core package, the default nut.js installation 
 If you do not require on-screen image search, you're all set to use any current node version!
 
 The cherry on top of all this is the fact that without the image matching module, the core package is usable on Apple Silicon.
-You can nut.js on your precious M1 chips, no Rosetta required!
+You can use nut.js on your precious M1 chips, no Rosetta required!
 
 ## Where's Waldo?
 
