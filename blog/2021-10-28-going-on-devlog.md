@@ -4,7 +4,7 @@ title: Going on - devlog
 author: Simon Hofmann
 author\_title: Maintainer @ nut.js
 author\_url: https://github.com/s1hofmann
-author\_image\_2021-10-12-incremental-steps-devlog.mdurl: https://avatars.githubusercontent.com/u/7813765?s=60&v=4
+author\_image\_url: https://avatars.githubusercontent.com/u/7813765?s=60&v=4
 tags: [building, status]
 ---
 
@@ -40,11 +40,11 @@ npm i @nut-tree/nut-js@next
 
 2. Create an `index.js` file with the following content:
 ```js
-const { screen } = require("@nut-tree/nut-js");
+const { screen, imageResource } = require("@nut-tree/nut-js");
 
 (async () => {
   try {
-    await screen.find("img.png");
+    await screen.find(imageResource("img.png"));
   } catch (e) {
     console.error(e);
   }
@@ -62,11 +62,11 @@ The error output tells you that nut.js cannot search for your template image sin
 
 A similar error appears when trying to save a screenshot to disk:
 ```js
-const { screen } = require("@nut-tree/nut-js");
+const { screen, imageResource } = require("@nut-tree/nut-js");
 
 (async () => {
   try {
-    await screen.capture("foo");
+    await screen.capture(imageResource("foo"));
   } catch (e) {
     console.error(e);
   }
@@ -90,12 +90,12 @@ npm i @nut-tree/template-matcher
 Once installed, all we have to do is import it in our code:
 
 ```js
-const { screen } = require("@nut-tree/nut-js");
+const { screen, imageResource } = require("@nut-tree/nut-js");
 require("@nut-tree/template-matcher"); // THIS IS NEW
 
 (async () => {
   try {
-    await screen.find("img.png");
+    await screen.find(imageResource("img.png"));
   } catch (e) {
     console.error(e);
   }
