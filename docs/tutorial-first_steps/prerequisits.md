@@ -24,10 +24,21 @@ xcode-select --install
 In case you're experiencing problems like your mouse not moving or your keyboard not typing,
 please make sure to give the process you're executing your tests with accessibility permissions.
 
-If an application wants to use accessibility features, a permission pop-up should be shown.
+nut.js will give you a subtle hint in case permissions are lacking:
+
+`##### WARNING! The application running this script is not a trusted process! Please visit https://github.com/nut-tree/nut.js#macos #####`
+
+When an application wants to use accessibility features, a permission pop-up should be shown.
 If not, you could try to manually add the application you're running the script from.
 
-`Settings -> Security & Privacy -> Privacy -> Accessibility -> Add...`
+`Settings -> Security & Privacy -> Privacy tab -> Accessibility -> Add...`
+
+For example, if you want to execute your node script in e.g. `iTerm2`, you'd have to add `iTerm.app` to the list.
+When running your script from a built-in terminal in e.g. `VSCode` or `IntelliJ`, you'd have to add the respective IDE.
+
+<p align="center">
+    <img src="https://github.com/nut-tree/nut.js/raw/develop/.gfx/permissions.png" alt="accessibility permissions screen"/>
+</p>
 
 ## Linux
 
