@@ -8,6 +8,10 @@ const termLines = [
         'cmd': true
     },
     {
+        'text': 'require("@nut-tree/template-matcher");',
+        'cmd': true
+    },
+    {
         'text': '',
         'cmd': false
     },
