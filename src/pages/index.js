@@ -85,7 +85,7 @@ export default function Home() {
                 <HomepageFeatures features={features}/>
                 <HeroSection
                     heroText={"I just started sponsoring nut ❤️  It saves me so much time! Also love provided functionality for testing, you really thought of everything!"}/>
-                        <HomepageFeatures features={benefits}/>
+                <HomepageFeatures features={benefits}/>
             </main>
         </Layout>
     );

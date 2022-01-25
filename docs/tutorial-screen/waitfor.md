@@ -16,6 +16,7 @@ Let's tweak the snippet used on [find](find.md) just a little:
 
 ```js {6}
 const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 (async () => {
     screen.config.resourceDirectory = "/resouce/path";

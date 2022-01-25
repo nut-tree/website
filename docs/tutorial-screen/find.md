@@ -11,8 +11,9 @@ See [`working with template images`](template-images.md#working-with-template-im
 
 Let's dissect how `screen.find` works by looking at a sample snippet:
 
-```js {1,4,6}
+```js {1,2,4,6}
 const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 (async () => {
     screen.config.resourceDirectory = "/resouce/path";
@@ -25,12 +26,11 @@ const { screen } = require("@nut-tree/nut-js");
 })();
 ```
 
-First things first, we're setting up our import on line 1.
+First things first, we're setting up our imports on line 1 and 2.
 
 Line 4 sets our `resourceDirectory`, although the most interesting thing happens in line 6: Actually searching the image.
 
-`screen.find` will load your template image from your configured resource directory.
-It will scan your **main** screen for the template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region.html) it located the template image in.
+`screen.find` will scan your **main** screen for the provided template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region.html) it located the template image in.
 Images are matched on a per-pixel basis.
 The amount of matching pixels is configurable via `confidence` property on the `config` object.
 `confidence` is expected to be a value between 0 and 1, it defaults to 0.99 (which corresponds to a 99% match).

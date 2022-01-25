@@ -15,22 +15,22 @@ Before we can actually look at a sample, we will have to install an additional p
 npm i node-abort-controller
 ```
 
-Now, let's take a look at an (rather artificial) example:
+Now, let's take a look at a (rather artificial) example:
 
 ```js
-const { screen, Region } = require("@nut-tree/nut-js");
-const AbortController = require("node-abort-controller");
+const { screen, Region, imageResource } = require("@nut-tree/nut-js");
+const { AbortController } = require("node-abort-controller");
 
 (async () => {
     const controller = new AbortController();
-    screen.waitFor("test.png", 5000, {abort: controller.signal});
+    screen.waitFor(imageResource("test.png"), 5000, 1000, {abort: controller.signal});
     setTimeout(() => controller.abort(), 2000);
 })();
 ```
 
 We instantiate our [AbortController](https://www.npmjs.com/package/node-abort-controller) in line 5 and pass its `signal` as an [OptionalSearchParameter](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters.html#abort) to [waitFor](waitfor.md).
 
-`waitFor` has a timeout of 5000 milliseconds configured, but after 2000 milliseconds, we call `abort()` on our [AbortController](https://www.npmjs.com/package/node-abort-controller), which will cancel the ongoing search:
+`waitFor` has a timeout of 5000 milliseconds configured, retrying after 1000 milliseconds, but after 2000 milliseconds, we call `abort()` on our [AbortController](https://www.npmjs.com/package/node-abort-controller), which will cancel the ongoing search:
 
 ```
 Action aborted by signal
