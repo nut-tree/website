@@ -8,7 +8,7 @@ export default function HomepageHeader() {
         <header className={clsx('hero hero--dark', styles.homePageHeader)}>
             <div className="container">
                 <div className={styles.buttons}>
-                    <h3>nut.js 2.0.0 has been released!</h3>
+                    <h3>It's like WD40, but for UI automation!</h3>
                     <Link
                         className="button button--secondary button--lg"
                         to="/docs/intro">
