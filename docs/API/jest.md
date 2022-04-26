@@ -16,11 +16,11 @@ const {jestMatchers} = require("@nut-tree/nut-js");
 expect.extend(jestMatchers);
 ```
 
-## [`toBeAt`](https://nut-tree.github.io/apidoc/globals.html#tobeat)
+## [`toBeAt`](https://nut-tree.github.io/apidoc/modules/expect_matchers_toBeAt_function.html#toBeAt)
 
 `toBeAt` is a matcher which verifies mouse cursor position.
 
-It receives a [Point](https://nut-tree.github.io/apidoc/classes/point.html) which specifies the expected [mouse](https://nut-tree.github.io/apidoc/classes/mouse.html) cursor position on screen.
+It receives a [Point](https://nut-tree.github.io/apidoc/classes/point_class.Point.html) which specifies the expected [mouse](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html) cursor position on screen.
 
 ```js
 const {jestMatchers, mouse, Point} = require("@nut-tree/nut-js");
@@ -63,9 +63,9 @@ describe("Basic test with custom Jest matchers", () => {
 });
 ```
 
-## [`toBeIn`](https://nut-tree.github.io/apidoc/globals.html#tobein)
+## [`toBeIn`](https://nut-tree.github.io/apidoc/modules/expect_matchers_toBeIn_function.html#toBeIn)
 
-`toBeIn` allows us to verify whether our [mouse](https://nut-tree.github.io/apidoc/classes/mouse.html) cursor is located within a certain [Region](https://nut-tree.github.io/apidoc/classes/region.html) or not.
+`toBeIn` allows us to verify whether our [mouse](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html) cursor is located within a certain [Region](https://nut-tree.github.io/apidoc/classes/region_class.Region.html) or not.
 
 ```js
 const {jestMatchers, mouse, Point} = require("@nut-tree/nut-js");
@@ -109,11 +109,11 @@ describe("Basic test with custom Jest matchers", () => {
 });
 ```
 
-## [`toShow`](https://nut-tree.github.io/apidoc/globals.html#toshow)
+## [`toShow`](https://nut-tree.github.io/apidoc/modules/expect_matchers_toShow_function.html#toShow)
 
-Sometimes we want to verify that our [screen](https://nut-tree.github.io/apidoc/classes/screen.html) displays a certain image.
+Sometimes we want to verify that our [screen](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html) displays a certain image.
 
-`toShow` receives a filename of an image in our [resourceDirectory](https://nut-tree.github.io/apidoc/classes/screen.html#config) and checks whether it's visible on our screen or not.
+`toShow` receives a filename of an image in our [resourceDirectory](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config) and checks whether it's visible on our screen or not.
 
 ```js
 const {jestMatchers, screen} = require("@nut-tree/nut-js");

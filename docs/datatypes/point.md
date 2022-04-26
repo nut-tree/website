@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Point
 
-When navigating your screen, nut.js relies on the [`Point`](https://nut-tree.github.io/apidoc/classes/point.html) datatype to represent points in 2D space.
+When navigating your screen, nut.js relies on the [`Point`](https://nut-tree.github.io/apidoc/classes/point_class.Point.html) datatype to represent points in 2D space.
 
-A [`Point`](https://nut-tree.github.io/apidoc/classes/point.html) is a simple data structure holding an `x` and `y` coordinate.
+A [`Point`](https://nut-tree.github.io/apidoc/classes/point_class.Point.html) is a simple data structure holding an `x` and `y` coordinate.
 
 ## Sample
 
