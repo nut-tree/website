@@ -6,7 +6,7 @@ sidebar_position: 2
 
 In order to search for an image on your screen, we have to provide a template [`Image`](../datatypes/image.md).
 
-These images can either be loaded via their full path and [`loadImage`](../datatypes/image.md#image-loading), or relative to a configurable [resource directory](https://nut-tree.github.io/apidoc/classes/screen.html#config.resourcedirectory).
+These images can either be loaded via their full path and [`loadImage`](../datatypes/image.md#image-loading), or relative to a configurable [resource directory](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config).
 
 ## Resource Directory
 

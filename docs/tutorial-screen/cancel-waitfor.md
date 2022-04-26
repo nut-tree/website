@@ -28,7 +28,7 @@ const { AbortController } = require("node-abort-controller");
 })();
 ```
 
-We instantiate our [AbortController](https://www.npmjs.com/package/node-abort-controller) in line 5 and pass its `signal` as an [OptionalSearchParameter](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters.html#abort) to [waitFor](waitfor.md).
+We instantiate our [AbortController](https://www.npmjs.com/package/node-abort-controller) in line 5 and pass its `signal` as an [OptionalSearchParameter](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters_class.OptionalSearchParameters.html) to [waitFor](waitfor.md).
 
 `waitFor` has a timeout of 5000 milliseconds configured, retrying after 1000 milliseconds, but after 2000 milliseconds, we call `abort()` on our [AbortController](https://www.npmjs.com/package/node-abort-controller), which will cancel the ongoing search:
 

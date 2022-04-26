@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # find
 
-Template images are [`Images`](../datatypes/image.md) either directly loaded using their full path, or relative to a configurable [resource directory](https://nut-tree.github.io/apidoc/classes/screen.html#config.resourcedirectory).
+Template images are [`Images`](../datatypes/image.md) either directly loaded using their full path, or relative to a configurable [resource directory](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config).
 See [`working with template images`](template-images.md#working-with-template-images) for further info.
 
 ## finding images
@@ -30,7 +30,7 @@ First things first, we're setting up our imports on line 1 and 2.
 
 Line 4 sets our `resourceDirectory`, although the most interesting thing happens in line 6: Actually searching the image.
 
-`screen.find` will scan your **main** screen for the provided template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region.html) it located the template image in.
+`screen.find` will scan your **main** screen for the provided template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region_class.Region.html) it located the template image in.
 Images are matched on a per-pixel basis.
 The amount of matching pixels is configurable via `confidence` property on the `config` object.
 `confidence` is expected to be a value between 0 and 1, it defaults to 0.99 (which corresponds to a 99% match).
@@ -69,5 +69,5 @@ In case we screwed up, nut.js will let us know by rejecting.
 
 - nut.js provides a `screen` instance to search for template images on your screen
 - The directory where to load your template images from is configurable via `config` object
-- It will search your **main** screen for the template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region.html) it located the template image in.
+- It will search your **main** screen for the template image and if it finds a match, it'll return the [Region](https://nut-tree.github.io/apidoc/classes/region_class.Region.html) it located the template image in.
 - The amount of matching pixels is configurable via the `confidence` property on the `config` object.

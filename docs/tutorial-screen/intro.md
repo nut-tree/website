@@ -37,9 +37,9 @@ require("@nut-tree/template-matcher"); // THIS IS NEW
 
 ## Provided Functionality
 
-[find](https://nut-tree.github.io/apidoc/classes/screen.html#find), [findAll](https://nut-tree.github.io/apidoc/classes/screen.html#findall) and [waitFor](https://nut-tree.github.io/apidoc/classes/screen.html#waitfor) are the main functions when it comes to image search.
+ [find](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#find), [findAll](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#findAll) and [waitFor](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#waitFor) are the main functions when it comes to image search.
 
-While [find](https://nut-tree.github.io/apidoc/classes/screen.html#find) and [findAll](https://nut-tree.github.io/apidoc/classes/screen.html#findall) try to locate an image on screen at the very moment, [waitFor](https://nut-tree.github.io/apidoc/classes/screen.html#waitfor) will repeatedly scan the screen for the image until a certain timeout is reached.
+While [find](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#findAll) and [findAll](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#findAll) try to locate an image on screen at the very moment, [waitFor](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#waitFor) will repeatedly scan the screen for the image until a certain timeout is reached.
 
 By default, image search is carried out over multiple scales.
 
