@@ -23,6 +23,20 @@
   --ifm-menu-color-active: #2fcb88;
 }
 
+[data-theme='dark'] {
+  --ifm-color-primary: var(--ifm-color-primary-lightest);
+  --ifm-breadcrumb-item-background-active: var(--ifm-link-color);
+}
+
+[data-theme='dark'] .breadcrumbs__item--active,
+[data-theme='dark'] .breadcrumbs__link,
+[data-theme='dark'] .table-of-contents__link:hover,
+[data-theme='dark'] .table-of-contents__link:hover code,
+[data-theme='dark'] .table-of-contents__link--active,
+[data-theme='dark'] .table-of-contents__link--active code {
+  color: var(--ifm-font-color-base);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
