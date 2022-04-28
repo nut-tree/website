@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Prerequisits
+# Prerequisites
 
 nut.js comes with a pre-built version of OpenCV for your respective target platform.
 In order to use these pre-compiled bindings, certain runtime conditions have to be met.
