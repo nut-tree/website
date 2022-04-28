@@ -13,7 +13,7 @@ These images can either be loaded via their full path and [`loadImage`](../datat
 When working with a resource directory, you can reference template images by filename, omitting the full path.
 However, when loading a template image, these filenames are relative to `screen.config.resourceDirectory`.
 
-`screen.config.resourceDirectory = /path/to/my/template/images`
+`screen.config.resourceDirectory = "/path/to/my/template/images"`
 
 If not configured explicitly, `screen.config.resourceDirectory` is set to the current working directory.
 

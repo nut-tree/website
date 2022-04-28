@@ -19,7 +19,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'tutorial-first_steps/prerequisits',
+          docId: 'tutorial-first_steps/prerequisites',
           position: 'left',
           label: 'Docs',
         },

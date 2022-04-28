@@ -14,7 +14,7 @@ See [`working with template images`](template-images.md#working-with-template-im
 
 Let's tweak the snippet used on [find](find.md) just a little:
 
-```js {6}
+```js {7}
 const { screen } = require("@nut-tree/nut-js");
 require("@nut-tree/template-matcher");
 
@@ -34,8 +34,9 @@ require("@nut-tree/template-matcher");
 It'll scan your main screen for the given template image, but if it fails to find it, it'll simply give it another shot.
 The interval in which these retries happen is configurable as well.
 
-```js
+```js {7}
 const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 (async () => {
     screen.config.resourceDirectory = "/resouce/path";

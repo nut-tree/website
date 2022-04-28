@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Screen Control
 
-nut.js allows searching and waiting for images on your screen to either verify certain conditions, or use it for further
+nut.js allows searching and waiting for images on your screen to either verify certain conditions, or use them for further
 processing.
 
 ## Configuration
 
 The nut.js [screen](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html) comes with
-a [config](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config) object which allows to configure its behaviour.
+a [config](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config) object which allows configuration of its behaviour.
 
 ### confidence
 
@@ -24,7 +24,7 @@ will highlight the matching [Region](https://nut-tree.github.io/apidoc/classes/r
 
 ### highlightDurationMs
 
-`screen.config.highlightDurationMs` configures the duration in milliseconds a highlight window is shown.
+`screen.config.highlightDurationMs` configures the millisecond duration a highlight window is shown.
 
 ### highlightOpacity
 
@@ -33,12 +33,12 @@ fully opaque).
 
 ### resourceDirectory
 
-`screen.config.resourceDirectory` configures the location to load assets from
+`screen.config.resourceDirectory` configures the location to load assets 
 via [`imageResource`](../tutorial-screen/template-images.md#loading-images-from-resource-directory). This allows
-configuring resource locations depending on e.g. the current operating system.
+configuration of resource locations depending on e.g. the current operating system.
 
-One could provide multiple folders containing platform specific template images and chose the correct resource directory
-at runtime. Following this scheme loading of platform specific images would be possible without changes to the source.
+One could provide multiple folders containing platform specific template images and choose the correct resource directory
+at runtime. Following this scheme, loading of platform specific images would be possible without changes to the source.
 
 ## [`capture`](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#capture)
 
@@ -54,7 +54,7 @@ at runtime. Following this scheme loading of platform specific images would be p
 
 ## [`grabRegion`](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#grabRegion)
 
-`grabRegion` allows you to an [`Image`](../datatypes/image.md) containing the current content of a desktop region.
+`grabRegion` allows you to retrieve an [`Image`](../datatypes/image.md) containing the current content of a desktop region.
 
 ## [`find`](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#find)
 
@@ -73,7 +73,7 @@ In contrast to [`find`](screen.md) returning only the most probable match, `find
 template [`Image`](../datatypes/image.md) and returns a list of all matched occurrences on the main screen. It is
 possible to override the [configured matching confidence](#confidence) and search region
 providing [OptionalSearchParameters](https://nut-tree.github.io/apidoc/classes/optionalsearchparameters_class.OptionalSearchParameters.html). In case of a match,
-the corresponding [Region](https://nut-tree.github.io/apidoc/classes/region_class.Region.html) on screen is returned.
+the corresponding [Regions](https://nut-tree.github.io/apidoc/classes/region_class.Region.html) on screen is returned.
 
 ```js
 const matches = await screen.findAll(imageResource("image.png"));
@@ -104,10 +104,10 @@ This way it's possible to repeatedly execute actions whenever a certain image is
 ## [`waitFor`](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#waitFor)
 
 Similar to [find](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#find), `waitFor` will search for a template image on a
-systems main screen.
+system's main screen.
 
 While [find](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#find) will fail immediately if no match is found, `waitFor`
-allows to configure a timeout in milliseconds during which the screen will repeatedly be scanned for the template image.
+allows configuration of a timeout in milliseconds during which the screen will repeatedly be scanned for the template image.
 The interval in milliseconds, in which the image search is carried out, is configurable as well. Its default value is set to 500ms. 
 Once the configured timeout is reached with no match, `waitFor` will fail.
 
@@ -117,9 +117,9 @@ await mouse.move(straightTo(centerOf(screen.waitFor(imageResource("image.png"), 
 
 ## [`colorAt`](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#colorAt)
 
-`colorAt` will return RGBA color information at a specified pixel location.
+`colorAt` will return RGBA color information at a specified pixel location within the system's main screen.
 
-For example, a black pixel would be represented as
+For example, a black pixel would be represented as:
 
 ```
 RGBA { R: 0, G: 0, B: 0, A: 255 }

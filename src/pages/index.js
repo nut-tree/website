@@ -54,7 +54,7 @@ const benefits = [
         Svg: require('../../static/img/clock.svg').default,
         description: (
             <>
-                nut.js is compatible with current and future releases of Node.js or Electron
+                nut.js is compatible with current and future releases of Node.js or Electron.
             </>
         ),
     },

@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # Keyboard Control
 
-nut.js allows to simulate keyboard input by typing text or pressing / releasing single keys or key combinations.
+nut.js allows simulation of keyboard input by typing text or pressing / releasing single keys or key combinations.
 
 ## Configuration
 
-The nut.js [keyboard](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html) comes with a [config](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html#config) object which allows to configure it's behaviour.
+The nut.js [keyboard](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html) comes with a [config](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html#config) object which allows configuration of its behaviour.
 
 ### `autoDelayMs`
 
@@ -16,7 +16,7 @@ The nut.js [keyboard](https://nut-tree.github.io/apidoc/classes/keyboard_class.K
 
 ## [`type`](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html#type)
 
-`type` allows one to type either [strings or Keys](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html#type)
+`type` allows one to type either [strings or Keys](https://nut-tree.github.io/apidoc/classes/keyboard_class.KeyboardClass.html#type).
 
 ```js
 const {keyboard, Key} = require("@nut-tree/nut-js");

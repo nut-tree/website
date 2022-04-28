@@ -20,7 +20,7 @@ const { mouse } = require("@nut-tree/nut-js");
 
 `mouse` gives you control over your, well, mouse, so let's play around with it a bit!
 
-**Attention:** nut.js is fully async, so in most examples you will see something like the above snippet, which is an async [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) used as a workaround to use `async` / `await`.
+**Attention:** nut.js is fully async, so in most examples you will see something like the above snippet, which is an async [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) used as a workaround to use `async` / `await` at the top-level.
 
 ## Simple Movement
 
@@ -79,7 +79,7 @@ const { mouse, straightTo, Point } = require("@nut-tree/nut-js");
 
 Sometimes we don't want to move along a path to reach a certain point.
 
-In such cases, we can rely on [setPosition](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#setPosition) to immediately change our cursor position to the provided [Point](https://nut-tree.github.io/apidoc/classes/point_class.Point.html)
+In such cases, we can rely on [setPosition](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#setPosition) to immediately change our cursor position to the provided [Point](https://nut-tree.github.io/apidoc/classes/point_class.Point.html).
 
 ```js
 const { mouse, Point } = require("@nut-tree/nut-js");
@@ -92,7 +92,7 @@ const { mouse, Point } = require("@nut-tree/nut-js");
 
 ## Summary
 
-- nut.js provides a `mouse` instance to control your cursor
-- Movement speed in pixels / second is configurable via the `config` object
-- It provides a high-level [MovementApi](https://nut-tree.github.io/apidoc/interfaces/movement_api_interface.MovementApi.html) for easy relative mouse movement
-- For fast changes of cursor position, [setPosition](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#setPosition) is the right tool
+- nut.js provides a `mouse` instance to control your cursor.
+- Movement speed in pixels / second is configurable via the `config` object.
+- It provides a high-level [MovementApi](https://nut-tree.github.io/apidoc/interfaces/movement_api_interface.MovementApi.html) for easy relative mouse movement.
+- For fast changes of cursor position, [setPosition](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#setPosition) is the right tool.

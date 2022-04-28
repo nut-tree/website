@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Jest integration
 
-nut.js provides custom matchers for Jest, which allows you to write UI tests using well known syntax.
+nut.js provides custom matchers for Jest, which allow you to write UI tests using a well known syntax.
 
 ## Setup
 
