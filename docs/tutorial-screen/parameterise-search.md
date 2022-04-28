@@ -8,7 +8,7 @@ sidebar_position: 8
 
 This allows to e.g. limit the search space to a certain portion of your screen:
 
-```js {4-5}
+```js
 const { screen, Region, OptionalSearchParameters, imageResource } = require("@nut-tree/nut-js");
 require("@nut-tree/template-matcher");
 const { AbortController } = require("node-abort-controller");

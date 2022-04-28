@@ -16,7 +16,7 @@ In case you're running Windows 10 N, please make sure to have the [Media Feature
 ## macOS
 
 On macOS, Xcode command line tools are required.
-You can install them by running
+You can install them by running:
 ```bash
 xcode-select --install
 ```
@@ -60,4 +60,4 @@ Setups on other distributions might differ.
 ## node
 
 nut.js is built and tested against various versions of node.
-However, for best compatibility, it's recommended to run the latest available LTS version of node (`lts/gallium` at the time of writing) and using a version manager like [nvm](https://github.com/nvm-sh/nvm)
+However, for best compatibility, it's recommended to run the latest available LTS version of node (`lts/gallium` at the time of writing) and using a version manager like [nvm](https://github.com/nvm-sh/nvm).

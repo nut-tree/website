@@ -10,7 +10,7 @@ We will simply refer to this directory as `working directory`.
 
 ## npm project 
 
-Let’s first initialize a new npm project in our `working directory` by executing 
+Let’s first initialize a new npm project in our `working directory` by executing: 
 
 `npm init`
 
@@ -36,7 +36,7 @@ in our newly created npm project will install nut.js and its required dependenci
 
 ### Snapshot releases
 
-nut.js also provides snapshot releases which allows testing upcoming features.
+nut.js also provides snapshot releases which allow testing of upcoming features.
 
 Running 
 

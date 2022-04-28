@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # highlight
 
-Especially during development we might want to visually track what happens when executing our script.
+Especially during development, we might want to visually track what happens when executing our script.
 When it comes to image search, it's one thing to see in e.g. the log that we found a match, but a visual indicator would be even better.
 
 [highlight](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#highlight) is exactly this!
@@ -37,8 +37,9 @@ const { screen, Region } = require("@nut-tree/nut-js");
 
 The way the API is structured, it's really easy to highlight regions located by e.g. [find](find.md):
 
-```js {4-6}
+```js {5-7}
 const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 (async () => {
     screen.config.resourceDirectory = "/resouce/path";
@@ -49,11 +50,12 @@ const { screen } = require("@nut-tree/nut-js");
 
 However, manually adding highlights is not only cumbersome, but also requires additional effort in case we want to remove it again before running our script in production.
 
-Therefore, nut.js provides an auto-highlight mechanism which is toggleable via [`config` property](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config).
+Therefore, nut.js provides an auto-highlight mechanism which is toggleable via the [`config` property](https://nut-tree.github.io/apidoc/classes/screen_class.ScreenClass.html#config).
 Highlight during development, disable it in production!
 
-```js {5}
+```js {6}
 const { screen } = require("@nut-tree/nut-js");
+require("@nut-tree/template-matcher");
 
 (async () => {
     screen.config.resourceDirectory = "/resouce/path";
@@ -63,12 +65,12 @@ const { screen } = require("@nut-tree/nut-js");
 })();
 ```
 
-With auto highlight turned on, we no longer have to manually care about highlighting [find](find.md) results.
+With auto highlight turned on, we no longer have to care about manually highlighting [find](find.md) results.
 Once [find](find.md) returns a valid [Region](https://nut-tree.github.io/apidoc/classes/region_class.Region.html), it will be highlighted.
 And since [waitFor](waitfor.md) reuses [find](find.md), auto-highlight works there as well!
 
 ## Summary
 
 - nut.js provides a way to visually debug image search results.
-- Both the highlight duration and the highlight window opacity are configurable via `config` object.
-- Auto highlight will automatically highlight results returned from [find](find.md)
+- Both the highlight duration and the highlight window opacity are configurable via the `config` object.
+- Auto highlight will automatically highlight results returned from [find](find.md).

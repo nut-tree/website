@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Mouse Control
 
-nut.js allows to simulate mouse input by moving the cursor, clicking mouse buttons or performing dragging gestures.
+nut.js allows simulation of mouse input by moving the cursor, clicking mouse buttons or performing dragging gestures.
 
 ## Configuration
 
-The nut.js [mouse](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html) comes with a [config](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#config) object which allows to configure it's behaviour.
+The nut.js [mouse](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html) comes with a [config](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#config) object which allows configuration of its behaviour.
 
 ### `autoDelayMs`
 
@@ -100,23 +100,23 @@ await mouse.move(down(10));
 
 ## [`scrollDown`](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#scrollDown)
 
-`scrollDown` scrolls `x` "ticks` downwards. Absolute scroll width depends on your system.
+`scrollDown` scrolls `x` "ticks" downwards. Absolute scroll width depends on your system.
 
 ## [`scrollUp`](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#scrollUp)
 
-`scrollUp` scrolls `x` "ticks` upwards. Absolute scroll width depends on your system.
+`scrollUp` scrolls `x` "ticks" upwards. Absolute scroll width depends on your system.
 
 ## [`scrollLeft`](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#scrollLeft)
 
-`scrollLeft` scrolls `x` "ticks` to the left. Absolute scroll width depends on your system.
+`scrollLeft` scrolls `x` "ticks" to the left. Absolute scroll width depends on your system.
 
 ## [`scrollRight`](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#scrollRight)
 
-`scrollRight` scrolls `x` "ticks` to the right. Absolute scroll width depends on your system.
+`scrollRight` scrolls `x` "ticks" to the right. Absolute scroll width depends on your system.
 
 ## [`drag`](https://nut-tree.github.io/apidoc/classes/mouse_class.MouseClass.html#drag)
 
-Similar to ['move'](#move), `drag` move the mouse cursor along a given path.
+Similar to [`move`](#move), `drag` moves the mouse cursor along a given path.
 
 While moving, it presses and holds the left mouse button, performing a drag gesture.
 
