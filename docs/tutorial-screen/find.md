@@ -12,7 +12,7 @@ See [`working with template images`](template-images.md#working-with-template-im
 Let's dissect how `screen.find` works by looking at a sample snippet:
 
 ```js {1,2,5,7}
-const { screen } = require("@nut-tree/nut-js");
+const { screen, imageResource } = require("@nut-tree/nut-js");
 require("@nut-tree/template-matcher");
 
 (async () => {
