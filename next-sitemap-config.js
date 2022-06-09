@@ -6,5 +6,6 @@ const { projectURL } = config
 
 module.exports = {
   siteUrl: projectURL,
-  generateRobotsTxt: true
+  generateRobotsTxt: true,
+  outDir: "./build/server/pages"
 }
