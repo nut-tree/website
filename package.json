@@ -1,40 +1,54 @@
 {
-  "name": "nut-js",
-  "version": "0.0.1",
-  "private": true,
+  "name": "@nut-tree/website",
+  "version": "2.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nut-tree/website.git"
+  },
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "dev": "next",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev",
+    "dev:watch": "next-remote-watch ./content",
+    "postbuild": "next-sitemap --config next-sitemap-config.js",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.13",
-    "@docusaurus/preset-classic": "^2.0.0-beta.13",
-    "@mdx-js/react": "^1.6.21",
-    "@svgr/webpack": "^5.5.0",
-    "clsx": "^1.1.1",
-    "file-loader": "^6.2.0",
-    "react": "^17.0.1",
-    "react-animated-term": "^2.0.0",
-    "react-dom": "^17.0.1",
-    "url-loader": "^4.1.1"
+    "classnames": "^2.3.1",
+    "github-slugger": "^1.4.0",
+    "gray-matter": "^4.0.3",
+    "markdown-toc": "^1.2.0",
+    "next": "^12.1.5",
+    "next-compose-plugins": "^2.2.1",
+    "next-mdx-remote": "3.0.8",
+    "next-remote-watch": "1.0.0",
+    "next-seo": "^5.4.0",
+    "next-sitemap": "^2.5.20",
+    "prettier": "^2.6.2",
+    "prismjs": ">=1.28.0",
+    "react": "17.0.2",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "17.0.2",
+    "react-shortcuts-hook": "^1.1.2",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-use": "^17.3.2",
+    "remark-breaks": "^3.0.2",
+    "remark-containers": "^1.2.0",
+    "remark-external-links": "^9.0.1",
+    "remark-hint": "^1.0.10",
+    "remark-mark-plus": "^1.0.21",
+    "remark-slug": "^7.0.1",
+    "remark-sub-super": "^1.0.20"
   },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   }
 }
