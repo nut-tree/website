@@ -1,11 +1,6 @@
 ---
-slug: welcome
+part: Blog
 title: Welcome
-author: Simon Hofmann
-author\_title: Maintainer @ nut.js
-author\_url: https://github.com/s1hofmann
-author\_image\_url: https://avatars.githubusercontent.com/u/7813765?s=60&v=4
-tags: [intro]
 ---
 
 Huh? A dedicated nut.js page? Including a blog? Tell me more!
