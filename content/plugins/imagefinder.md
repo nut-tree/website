@@ -5,9 +5,9 @@ title: ImageFinderInterface
 
 Currently, there are two official `ImageFinder` implementations provided by nut.js.
 
---- 
-
 ## @nut-tree/template-matcher
+
+--- 
 
 ```shell
 npm i @nut-tree/template-matcher
@@ -15,9 +15,9 @@ npm i @nut-tree/template-matcher
 
 Initial implementation for on-screen image search.
 
---- 
-
 ### Usage
+
+--- 
 
 Simply require / import the package to wire up the provider:
 
@@ -30,9 +30,9 @@ require("@nut-tree/template-matcher");
 })();
 ```
 
---- 
-
 ## @nut-tree/nl-matcher
+
+--- 
 
 ```shell
 npm i @nut-tree/nl-matcher
@@ -57,9 +57,9 @@ See the table below for a comparison of both modules:
 | Supports node 12 / 13 / 14 / 15 / 16 / 17 / next              | ✔️ / ❌ / ✔️ / ✔️ / ✔️ / ❌ / ❌             | ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️             |
 | Supports Electron 8 / 9 / 10 / 11 / 12 / 13 / 14 / 15 / 16 / next | ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ❌ / ❌ / ❌ / ❌ | ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ / ✔️ |
 
---- 
-
 ### Usage
+
+--- 
 
 Simply require / import the package to wire up the provider:
 
