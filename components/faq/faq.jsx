@@ -6,32 +6,41 @@ import {CustomLink} from "../mdx-components";
 const faqItems = [
     {
         question: <span id="faq-sponsor-benefits">What's the benefit of sponsoring?</span>,
-        answer: <span>Sponsoring development will give you access to private packages and ensures continuous maintenance. Additionally, it allows me to pay for hardware to support additional platforms/architectures or features! The ultimate goal would be to work full-time on nut.js.</span>
+        answer: <div>
+            <p>nut.js is an open source project, so development and maintenance happens in my free time.</p>
+            <p>Sponsoring development will give you access to private packages and ensures continuous maintenance.</p>
+            <p>Additionally, it allows me to pay for hardware to support additional platforms/architectures or features!
+                The ultimate goal would be to work full-time on nut.js.
+            </p>
+        </div>
     },
     {
         question: <span id="faq-private-packages">What private packages are available at the moment?</span>,
         answer: (
-            <span>
+            <div>
                 <p>At the moment private packages include:</p>
                 <ul className="list-disc pl-4 mt-2 space-y-1">
-                    <li>An improved image matching plugin that supports Apple Silicon chips, works across all current and future node/Electron versions and provides multi-image matching</li>
+                    <li>An improved image matching plugin that supports Apple Silicon chips, works across all current
+                        and future node/Electron versions and provides multi-image matching
+                    </li>
                     <li>An OCR plugin (currently in beta)</li>
                 </ul>
-            </span>)
+            </div>)
     },
     {
         question: <span id="faq-consulting">Are you available for consulting?</span>,
-        answer: <span>
+        answer: <div>
             <p>Yes! If you are stuck with something and want me to help you out, feel free to reach out to me at <CustomLink
                 href="mailto:kontakt@s1h.org?subject=Consulting request">kontakt@s1h.org</CustomLink></p>
-        </span>
+        </div>
     },
     {
         question: <span>I'm desperately trying to solve a problem, could you please help me out for free?</span>,
-        answer: <span id="faq-free-work">
+        answer: <div id="faq-free-work">
             <p>No, sorry! I'm already providing nut.js for free, which takes up quite a lot of my time.</p>
-            <p>If you want me to help you fix a problem, please refer to <a className="underline" href="#faq-consulting">#3</a>.</p>
-        </span>
+            <p>If you want me to help you fix a problem, please refer to <a className="underline"
+                                                                            href="#faq-consulting">#3</a>.</p>
+        </div>
     },
 ]
 

@@ -16,7 +16,7 @@ export default function Hero({ctaText, ctaLink}) {
                     <img className="h-32 w-32 lg:h-64 lg:w-64"
                          src="/icon.svg" alt="nut.js logo"/>
                     <div className="max-w-md mx-auto">
-                        <p className="mb-20 text-lg text-gray-200">Node.js Desktop Automation</p>
+                        <p className="mb-20 text-lg text-gray-200">Open Source Node.js Cross Platform Desktop Automation</p>
                         <a className="inline-block py-5 px-12 text-white font-bold border border-gray-300 hover:border-gray-200 hover:bg-gray-400 rounded-full"
                            href={ctaLink}>{ctaText}</a>
                     </div>

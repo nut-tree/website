@@ -10,7 +10,7 @@ export default function Sponsoring() {
                             <div className="max-w-md">
                                 <span className="text-lg font-bold text-white">How it works</span>
                                 <h2 className="mt-12 mb-10 text-6xl font-bold font-heading">Sponsoring</h2>
-                                <p className="mb-16 text-xl text-gray-300">Sustainable open source software</p>
+                                <p className="mb-16 text-xl text-gray-100">Sustainable open source software</p>
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 px-5">

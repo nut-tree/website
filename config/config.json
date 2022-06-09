@@ -30,11 +30,11 @@
     },
     {
       "title": "Tutorials",
-      "path": "/tutorials"
+      "path": "/tutorials/first_steps"
     },
     {
       "title": "API and Data Types",
-      "path": "/API"
+      "path": "/API/datatypes"
     },
     {
       "title": "Plugins",
@@ -66,10 +66,6 @@
       "part": "Tutorials",
       "chapters": [
         {
-          "title": "Tutorials",
-          "path": "/tutorials"
-        },
-        {
           "title": "First Steps",
           "path": "/tutorials/first_steps"
         },
@@ -86,10 +82,6 @@
     {
       "part": "API and Data Types",
       "chapters": [
-        {
-          "title": "API and Data Types",
-          "path": "/API"
-        },
         {
           "title": "Data Types",
           "path": "/API/datatypes"
