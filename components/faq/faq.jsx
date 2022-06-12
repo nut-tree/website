@@ -12,6 +12,7 @@ const faqItems = [
             <p>Additionally, it allows me to pay for hardware to support additional platforms/architectures or features!
                 The ultimate goal would be to work full-time on nut.js.
             </p>
+            <p><b>Conclusion:</b> If nut.js is beneficial for you or your company, you should consider sponsoring the project!</p>
         </div>
     },
     {
